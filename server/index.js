@@ -43,9 +43,10 @@ app.use("/api/modules", modRoute);
 app.use("/api/attendance", attRoute);
 app.use("/api/absenceletters", absRoute);
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
  });
 
-// module.exports=app;
+module.exports=app;
