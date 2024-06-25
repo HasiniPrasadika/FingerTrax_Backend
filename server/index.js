@@ -29,7 +29,7 @@ mongoose
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://fingertrax-seven.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
